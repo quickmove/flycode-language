@@ -1,0 +1,30 @@
+{
+    "name": "flycode-language",
+    "displayName": "flycode-language",
+    "description": "加班不规范，亲人两行泪。",
+    "version": "0.0.1",
+    "publisher": "linjing",
+    "engines": {
+        "vscode": "^1.35.0"
+    },
+    "repository": {
+      "type": "github",
+      "url": "https://github.com/quickmove/flycode-language.git"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "flycode",
+            "aliases": ["FlyCode", "flycode"],
+            "extensions": [".flycode"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "flycode",
+            "scopeName": "source.flycode",
+            "path": "./syntaxes/flycode.tmLanguage.json"
+        }]
+    }
+}
